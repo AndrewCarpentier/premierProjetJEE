@@ -7,7 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%@ include file="menu.jsp" %>
-	<h1>page de login</h1>
+	<ul>
+		<li><a href="/premierProjetWeb/index">Accueil</a></li>
+		<li><a href="/premierProjetWeb/login">Login</a></li>
+		<li><a href="/premierProjetWeb/tableau">Tableau</a></li>
+	</ul>
 </body>
 </html>

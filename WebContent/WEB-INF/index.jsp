@@ -7,6 +7,7 @@
 <title>Index</title>
 </head>
 <body>
+<%@ include file="menu.jsp" %>
 	<h1>Bonjour JEE</h1>
 </body>
 </html>

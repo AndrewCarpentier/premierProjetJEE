@@ -7,7 +7,9 @@
 <title>Tableau</title>
 </head>
 <body>
-<table>
+	<%@ include file="menu.jsp" %>
+	
+	<table>
 		<%
 			int nombre = 1;
 			for (int i = 0; i < 3; i++) {
