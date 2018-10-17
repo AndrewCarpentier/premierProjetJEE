@@ -34,7 +34,7 @@
 				<h1>Oops!</h1>
 				<h2>404 - The Page can't be found</h2>
 			</div>
-			<a href="index">Go TO Homepage</a>
+			<a href="accueil">Go TO Homepage</a>
 		</div>
 	</div>
 

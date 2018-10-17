@@ -16,6 +16,7 @@
 			<li><a href="login">Login</a></li>
 			<li><a href="tableau">Tableau</a></li>
 			<li><a href="inscription">Inscription</a></li>
+			<li><a href="utilisateur">Utilisateur</a></li>
 		</ul>
 	</div>
 </body>

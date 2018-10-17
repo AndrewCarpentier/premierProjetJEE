@@ -8,14 +8,14 @@
 	    <link rel="stylesheet" type="text/css" href="ressources/CSS/accueil.css">
 	</head>
 	<body>
-	    <div id="index-titre">
+	    <div id="titre">
 	        <h1 class="titre">ACCUEIL</h1>
 	    </div>
 	
 	<%@ include file="menu.jsp" %>
 	
-	    <div id="index-container-image">
-	        <a href="inscription"><img src="ressources/img/utilisateur.jpg" alt="logo pour aller à la page utilisateur"/></a>
+	    <div id="container-image">
+	        <a href="utilisateur"><img src="ressources/img/utilisateur.jpg" alt="logo pour aller à la page utilisateur"/></a>
 	        <a href="produit"><img src="ressources/img/produit.jpg" alt="logo pour aller à la page produit"/></a>
 	    </div>
 	</body>

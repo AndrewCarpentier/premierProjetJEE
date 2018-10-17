@@ -80,12 +80,7 @@
     <p><a href="accueil">retour à l'index</a></p>
 </div>
 
-<script>
-    function rediriger() {
-        console.log("Appel de la fonction rediriger");
-        alert("Vous allez être rediriger vers un autre site");
-    }
-</script>
+<script src="ressources/JS/rediriger.js"></script>
 
 </body>
 </html>

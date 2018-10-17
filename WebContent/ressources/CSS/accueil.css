@@ -11,20 +11,20 @@
     color: blue;
 }
 
-#index-container-image{
+#container-image{
     bottom: 20px;
     opacity: 1;
     position: relative;
     display: block;
     margin: 2% 1% 3% 5%;
 }
-#index-container-image img {
+#container-image img {
     width: 20%;
     height: 20%;
+    	border : 5px white solid;
 }
 
-#index-container-image img:hover{
-    width: 30%;
-    height: auto;
+#container-image img:hover{
+	border : 5px blue solid;
 }
 
