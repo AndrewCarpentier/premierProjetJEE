@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class inscriptionServlet
+ * Servlet implementation class TableauServlet
  */
-@WebServlet("/inscription")
-public class inscriptionServlet extends HttpServlet {
+@WebServlet("/tableau")
+public class TableauServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public inscriptionServlet() {
+    public TableauServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -27,7 +27,7 @@ public class inscriptionServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		 this.getServletContext().getRequestDispatcher("/WEB-INF/inscription.jsp").forward(request, response);
+		 this.getServletContext().getRequestDispatcher("/WEB-INF/tableau.jsp").forward(request, response);
 	}
 
 	/**

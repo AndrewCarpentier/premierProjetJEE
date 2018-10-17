@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class erreur404Servlet
+ * Servlet implementation class InscriptionServlet
  */
-@WebServlet("/404")
-public class erreur404Servlet extends HttpServlet {
+@WebServlet("/inscription")
+public class InscriptionServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public erreur404Servlet() {
+    public InscriptionServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -27,7 +27,7 @@ public class erreur404Servlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		  this.getServletContext().getRequestDispatcher("/WEB-INF/404.jsp").forward(request, response);
+		 this.getServletContext().getRequestDispatcher("/WEB-INF/inscription.jsp").forward(request, response);
 	}
 
 	/**

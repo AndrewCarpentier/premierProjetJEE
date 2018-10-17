@@ -11,6 +11,8 @@
 	<div>
 		<ul>
 			<li><a href="index">index</a></li>
+			<li><a href="accueil">accueil</a></li>
+			<li><a href="produit">produit</a></li>
 			<li><a href="login">Login</a></li>
 			<li><a href="tableau">Tableau</a></li>
 			<li><a href="inscription">Inscription</a></li>
