@@ -1,0 +1,10 @@
+@charset "ISO-8859-1";
+
+ul, li{
+	display : inline-block;
+}
+
+li:hover{
+	background : gray;
+	color : red;
+}
