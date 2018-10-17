@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class indexServlet
+ * Servlet implementation class erreur404Servlet
  */
-@WebServlet("/index")
-public class indexServlet extends HttpServlet {
+@WebServlet("/404")
+public class erreur404Servlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public indexServlet() {
+    public erreur404Servlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -27,7 +27,7 @@ public class indexServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		  this.getServletContext().getRequestDispatcher("/WEB-INF/index.jsp").forward(request, response);
+		  this.getServletContext().getRequestDispatcher("/WEB-INF/404.jsp").forward(request, response);
 	}
 
 	/**

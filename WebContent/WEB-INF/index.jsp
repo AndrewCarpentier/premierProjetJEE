@@ -5,10 +5,11 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Index</title>
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/index.css">
 </head>
 <body>
 <%@ include file="menu.jsp" %>
-	<h1>Bonjour JEE</h1>
+	<div>
+		<h1>Bonjour JEE</h1>
+	</div>
 </body>
 </html>

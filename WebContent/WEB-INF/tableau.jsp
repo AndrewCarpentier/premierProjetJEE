@@ -5,7 +5,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Tableau</title>
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/tableau.css">
+<link rel="stylesheet" type="text/css" href="ressources/CSS/tableau.css">
 </head>
 <body>
 	<%@ include file="menu.jsp" %>

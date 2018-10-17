@@ -5,14 +5,16 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>menu</title>
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/menu.css">
+<link rel="stylesheet" type="text/css" href="ressources/CSS/menu.css">
 </head>
 <body>
-	<ul>
-		<li><a href="/premierProjetWeb/index">Accueil</a></li>
-		<li><a href="/premierProjetWeb/login">Login</a></li>
-		<li><a href="/premierProjetWeb/tableau">Tableau</a></li>
-		<li><a href="/premierProjetWeb/inscription">Inscription</a></li>
-	</ul>
+	<div>
+		<ul>
+			<li><a href="index">Accueil</a></li>
+			<li><a href="login">Login</a></li>
+			<li><a href="tableau">Tableau</a></li>
+			<li><a href="inscription">Inscription</a></li>
+		</ul>
+	</div>
 </body>
 </html>

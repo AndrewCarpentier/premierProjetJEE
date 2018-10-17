@@ -3,9 +3,11 @@
 <head>
 	<meta charset="ISO-8859-1">
     <title>Inscription</title>
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/inscription.css"/>
+    <link rel="stylesheet" type="text/css" href="ressources/CSS/inscription.css"/>
 </head>
 <body>
+<%@ include file="menu.jsp" %>
+
     <div id="inscription-formulaire">
         <form id="form1" method="post">
             <fieldset>
@@ -411,6 +413,6 @@
             </div>
         </form>
     </div>
-<script type="application/javascript" src="${pageContext.request.contextPath}/JS/inscription.js"></script>
+<script type="application/javascript" src="ressources/JS/inscription.js"></script>
 </body>
 </html>
