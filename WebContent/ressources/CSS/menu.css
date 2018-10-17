@@ -2,9 +2,9 @@
 
 ul, li{
 	display : inline-block;
+	border : white 2px solid;
 }
 
 li:hover{
-	background : gray;
-	color : red;
+	border : blue 2px solid;
 }
