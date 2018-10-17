@@ -5,28 +5,31 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Tableau</title>
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/tableau.css">
 </head>
 <body>
 	<%@ include file="menu.jsp" %>
-	
-	<table>
-		<%
-			int nombre = 1;
-			for (int i = 0; i < 3; i++) {
-		%>
-		<tr>
-		<%
-			for (int j = 0; j < 3; j++) {
-		%>
-		<td><%=nombre%></td>
-		<%
-			nombre++;
+	<div>
+		<table>
+			<%
+				int nombre = 1;
+				for (int i = 0; i < 3; i++) {
+			%>
+			<tr>
+			<%
+				for (int j = 0; j < 3; j++) {
+			%>
+			<td><%=nombre%></td>
+			<%
+				nombre++;
+					}
+			%>
+			</tr>
+			<%
 				}
-		%>
-		</tr>
-		<%
-			}
-		%>
-	</table>
+			%>
+		</table>	
+	</div>
+
 </body>
 </html>
