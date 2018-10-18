@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@page import="fr.andrew.inscription.Personne"%>
 <html lang="fr">
 <head>
 	<meta charset="ISO-8859-1">
@@ -7,7 +8,9 @@
 </head>
 <body>
 <%@ include file="menu.jsp" %>
-
+<%
+Personne p = new Personne("Artois", "Jerome", "14/07/1976", "Avenue De Marlioz", 84, "Lille", "JeromeArtois@gmail.com", "0621129973" );
+%>
     <div id="inscription-formulaire">
         <form id="form1" method="post">
             <fieldset>
@@ -21,27 +24,27 @@
                 <div id="body" class="body">
                     <div>
                         <label for="nom">Nom : </label><br/>
-                        <input type="text" id="nom" name="nom" placeholder="nom" maxlength="25"/>
+                        <input type="text" id="nom" name="nom" placeholder="nom" value="<%= p.getNom() %>" maxlength="25"/>
                     </div>
                     <div>
                         <label for="prenom">Prenom : </label><br/>
-                        <input type="text" id="prenom" name="prenom" placeholder="prenom" maxlength="25"/>
+                        <input type="text" id="prenom" name="prenom" placeholder="prenom" value="<%= p.getPrenom() %>" maxlength="25"/>
                     </div>
                     <div>
                         <label for="datedenaissance">Date de naissance : </label><br/>
-                        <input type="date" id="datedenaissance" name="datedenaissance" placeholder="date de naissance"/>
+                        <input type="date" id="datedenaissance" name="datedenaissance" placeholder="date de naissance" value=" <%= p.getDateDeNaissance() %> "/>
                     </div>
                     <div>
                         <label for="nomrue">Nom de la rue : </label><br/>
-                        <input type="text" id="nomrue" name="nomrue" placeholder="nom de la rue" maxlength="25"/>
+                        <input type="text" id="nomrue" name="nomrue" placeholder="nom de la rue" maxlength="25" value=" <%= p.getNomDeRue() %> "/>
                     </div>
                     <div>
                         <label for="numrue">Numero de la rue : </label><br/>
-                        <input type="number" id="numrue" name="numrue" placeholder="numero de la rue"/>
+                        <input type="number" id="numrue" name="numrue" placeholder="numero de la rue" value="<%= p.getNumDeRue() %>"/>
                     </div>
                     <div>
                         <label for="ville">Ville : </label><br/>
-                        <input type="text" id="ville" name="ville" placeholder="Ville" maxlength="20">
+                        <input type="text" id="ville" name="ville" placeholder="Ville" maxlength="20" value="<%= p.getVille() %>">
                     </div>
                     <div>
                         <label for="pays">Pays : </label><br/>
@@ -391,11 +394,11 @@
                     </div>
                     <div>
                         <label for="email">Email : </label><br/>
-                        <input type="email" name="email" id="email" placeholder="email" maxlength="50"/>
+                        <input type="email" name="email" id="email" placeholder="email" maxlength="50" value="<%= p.getEmail() %>" />
                     </div>
                     <div>
                         <label for="telephone">Telephone : </label><br/>
-                        <input type="tel" name="telephone" id="telephone" placeholder="telephone" maxlength="10"/>
+                        <input type="tel" name="telephone" id="telephone" placeholder="telephone" maxlength="10" value="<%= p.getTel() %>"/>
                     </div>
                     <div>
                         <label for="comment">Commentaire : </label><br/>

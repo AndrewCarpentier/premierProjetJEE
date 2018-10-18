@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class ProduitServlet
+ * Servlet implementation class ProduitBDDServlet
  */
-@WebServlet("/produit")
-public class ProduitServlet extends HttpServlet {
+@WebServlet({ "/produitBDD", "/produitbdd" })
+public class ProduitBDDServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ProduitServlet() {
+    public ProduitBDDServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -27,7 +27,6 @@ public class ProduitServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		
 		String nomAlexaEcho = "alexa echo";
 		String nomClavier = "clavier";
 		String nomEcran = "écran";
@@ -100,7 +99,7 @@ public class ProduitServlet extends HttpServlet {
 		request.setAttribute("lienOnClickTabletteGraphique", lienOnClickTabletteGraphique);
 		request.setAttribute("lienOnClickTablette", lienOnClickTablette);		
 		
-		 this.getServletContext().getRequestDispatcher("/WEB-INF/produit.jsp").forward(request, response);
+		 this.getServletContext().getRequestDispatcher("/WEB-INF/produitBDD.jsp").forward(request, response);
 	}
 
 	/**
