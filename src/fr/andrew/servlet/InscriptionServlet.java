@@ -29,7 +29,8 @@ public class InscriptionServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		
+		Personne jerome = new Personne("Artois", "Jerome", "1974-07-22", "Avenue De Marlioz", 84, "Lille", "JeromeArtois@gmail.com", "0621129973" );
+		request.setAttribute("jerome", jerome);
 		this.getServletContext().getRequestDispatcher("/WEB-INF/inscription.jsp").forward(request, response);
 	}
 
