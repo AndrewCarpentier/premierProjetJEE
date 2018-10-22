@@ -1,3 +1,7 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>    
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!DOCTYPE html>
 <%@page import="fr.andrew.inscription.Personne"%>
 <html lang="fr">
@@ -14,7 +18,7 @@
     <div id="inscription-formulaire">
         <form id="form1" method="post">
             <fieldset>
-                <legend>Vos coordonn�es : </legend>
+                <legend>Vos coordonnées : </legend>
                 <div>
                     <input type="radio" id="M." name="civilite" value="M." checked/>
                     <label for="M.">M.</label>
@@ -100,7 +104,7 @@
                             <option value="Coree_du_Nord">Coree_du_Nord </option>
                             <option value="Coree_du_Sud">Coree_du_Sud </option>
                             <option value="Costa_Rica">Costa_Rica </option>
-                            <option value="Cote_d_Ivoire">Côte_d_Ivoire </option>
+                            <option value="Cote_d_Ivoire">CÃ´te_d_Ivoire </option>
                             <option value="Croatie">Croatie </option>
                             <option value="Cuba">Cuba </option>
                             <option value="Danemark">Danemark </option>
@@ -171,7 +175,7 @@
                             <option value="Macao">Macao </option>
                             <option value="Macedoine">Macedoine </option>
                             <option value="Madagascar">Madagascar </option>
-                            <option value="Madère">Madère </option>
+                            <option value="MadÃ¨re">MadÃ¨re </option>
                             <option value="Malaisie">Malaisie </option>
                             <option value="Malawi">Malawi </option>
                             <option value="Maldives">Maldives </option>
@@ -383,9 +387,9 @@
                             <option value="971">971 - Guadeloupe</option>
                             <option value="972">972 - Martinique</option>
                             <option value="973">973 - Guyane</option>
-                            <option value="974">974 - R�union</option>
+                            <option value="974">974 - Réunion</option>
                             <option value="975">975 - Saint-Pierre-et-Miquelon</option>
-                            <option value="984">984 - Terres-australes-et-antarctiques-fran�aises</option>
+                            <option value="984">984 - Terres-australes-et-antarctiques-françaises</option>
                             <option value="985">985 - Mayotte</option>
                             <option value="986">986 - Wallis-et-Futuna</option>
                             <option value="987">987 - Polynesie-franeaise</option>

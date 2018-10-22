@@ -27,6 +27,8 @@ public class UtilisateurServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		String hellojstl = "salut";
+		request.setAttribute("hellojstl", hellojstl);
 		 this.getServletContext().getRequestDispatcher("/WEB-INF/utilisateur.jsp").forward(request, response);
 	}
 
