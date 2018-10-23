@@ -1,0 +1,16 @@
+@charset "ISO-8859-1";
+
+table, td, th{
+	border : 1px #0080ff solid;
+	border-collapse: collapse;
+	font-size : 15px;
+}
+
+td, th{
+	height : 20px;
+	width : 20px;
+	text-align : center;
+}
+
+table{
+	margin-left : 46%;
