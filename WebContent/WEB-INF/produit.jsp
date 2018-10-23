@@ -6,7 +6,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Produits</title>
+    <title>Produit</title>
     <link rel="stylesheet" type="text/css" href="ressources/CSS/produit.css"/>
 </head>
 <body>

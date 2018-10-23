@@ -32,6 +32,5 @@
 	nb1 < nb2: ${nb1 lt nb2 }<br/>
 	nb1 == nb2 : ${nb1 eq nb2 }<br/>
 	nb1 != nb2 : ${nb1 ne nb2 }<br/>
-
 </body>
 </html>

@@ -21,7 +21,7 @@
 #container-image img {
     width: 20%;
     height: 20%;
-    	border : 5px white solid;
+    border : 5px white solid;
 }
 
 #container-image img:hover{
