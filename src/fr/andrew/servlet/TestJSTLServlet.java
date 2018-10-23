@@ -27,8 +27,13 @@ public class TestJSTLServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		Integer nombre1 = 37;		
-		request.setAttribute("nombre1", nombre1);
+		Integer nombre = Integer.valueOf(request.getParameter("nb"));
+		Integer nombreColonne = Integer.valueOf(request.getParameter("col"));
+		Integer modulo = Integer.valueOf(request.getParameter("mod"));
+		
+		request.setAttribute("nombre", nombre);
+		request.setAttribute("nombreColonne", nombreColonne);
+		request.setAttribute("modulo", modulo);
 		
 		this.getServletContext().getRequestDispatcher("/WEB-INF/testjstl.jsp").forward(request, response);
 	}
