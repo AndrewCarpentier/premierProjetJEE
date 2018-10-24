@@ -1,0 +1,46 @@
+#produits-container-image{
+    bottom: 20px;
+    position: relative;
+    margin-left: 40%;
+    margin-top: 250px;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    margin-top: 3%;
+    border: white 3px solid;
+
+}
+img:hover{
+    border: #0a8fb6 3px solid;
+    cursor : pointer;
+}
+
+.prix{
+    position: absolute;
+    top: 0%;
+    right: 1%;
+    background-color: #0a8fb6;
+    opacity: 0.6;
+    color: white;
+    font-family: "Comic Sans MS";
+}
+
+.containerimg {
+    position: relative;
+    display: inline-block;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.nom-produit{
+    position: center;
+    background-color: #0a8fb6;
+    opacity: 0.8;
+    color: white;
+    text-align: center;
+    height: 30px;
+    font-size: 20px;
+    font-family: "Comic Sans MS";
+}
