@@ -10,25 +10,24 @@
 	href="ressources/CSS/testjstl.css">
 </head>
 <body>
-
-	<c:set var="x" value="${random.nextInt(10)}"/>
-	${x }
 	
-	<c:set var="nbAleatoire" value="${Integer.valueOf(Math.random() * 299) +1}"/>
-	<c:set var="colAleatoire" value="${Integer.valueOf(Math.random() * 19) +1}"/>
+	<c:set var="nbAleatoire" value="${Integer.valueOf(Math.random() * 499) +1}"/>
+	<c:set var="colAleatoire" value="${Integer.valueOf(Math.random() * 39) +1}"/>
 	
-	<a href="http://localhost:8080/premierProjetWeb/jstl?nb=${nbAleatoire }&col=${colAleatoire }&mod=5">Click
-		(nb:aleatoire (max : 300),col: aleatoire (max : 20),mod: 5)<br/>valeur après le click ( nb : ${nbAleatoire } et col : ${colAleatoire })</a>
+	<a href="http://localhost:8080/premierProjetWeb/jstl?nb=${nbAleatoire }&col=${colAleatoire }&modulo=5">Click
+		(nb:aleatoire (max : 500),col: aleatoire (max : 40),modulo: 5)<br/>valeur après le click ( nb : ${nbAleatoire } & col : ${colAleatoire })</a>
+		
+		
 	<c:set var="nombreAfficher" value="0" />
-	<c:set var="x" value="${-(modulo-1) }" />
+	<c:set var="x" value="${-(param.modulo-1) }" />
 
 	<table>
-		<c:forEach var="i" begin="0" end="${nombre/nombreColonne }">
+		<c:forEach var="i" begin="0" end="${param.nb/param.col }">
 			<tr>
-				<c:forEach var="j" begin="1" end="${nombreColonne }">
-					<c:if test="${nombreAfficher lt nombre }">
+				<c:forEach var="j" begin="1" end="${param.col }">
+					<c:if test="${nombreAfficher lt param.nb }">
 						<c:choose>
-							<c:when test="${x mod modulo == 0 }">
+							<c:when test="${x mod param.modulo == 0 }">
 								<td>*</td>
 								<c:set var="nombreAfficher" value="${nombreAfficher+1 }" />
 								<c:set var="x" value="${x+1 }" />
