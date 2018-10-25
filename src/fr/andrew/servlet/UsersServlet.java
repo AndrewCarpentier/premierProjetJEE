@@ -48,6 +48,8 @@ public class UsersServlet extends HttpServlet {
 			p.add(jerome);
 			p.add(simone);
 		
+
+			
 		request.setAttribute("p", p);
 		this.getServletContext().getRequestDispatcher("/WEB-INF/users.jsp").forward(request, response);
 	}

@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class DetailUsersServlet
+ * Servlet implementation class DetailUserSessionServlet
  */
-@WebServlet("/detailusers")
-public class DetailUsersServlet extends HttpServlet {
+@WebServlet("/detailusersession")
+public class DetailUserSessionServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public DetailUsersServlet() {
+    public DetailUserSessionServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -27,8 +27,7 @@ public class DetailUsersServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		
-		this.getServletContext().getRequestDispatcher("/WEB-INF/detailusers.jsp").forward(request, response);
+		this.getServletContext().getRequestDispatcher("/WEB-INF/detailusersession.jsp").forward(request, response);
 	}
 
 	/**

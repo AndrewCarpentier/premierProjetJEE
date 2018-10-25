@@ -1,3 +1,4 @@
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -10,6 +11,7 @@
 	href="ressources/CSS/detailusers.css" />
 </head>
 <body>
+	
 	<div id="container-image" class="containerimg">
 		<img src="${param.img }" alt="${param.nom }" id="${param.nom }" />
 		<p class="nom-p">${param.nom } ${param.prenom }</p>

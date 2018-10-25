@@ -10,18 +10,13 @@
 	href="ressources/CSS/users.css" />
 </head>
 <body>
-	<c:forEach var="p" items="${p }">
+	<c:forEach var="p" items="${p }" varStatus="i">
 			<div id="container-image" class="containerimg">
-				<a href="/premierProjetWeb/detailusers?nom=${p.nom }&prenom=${p.prenom }&img=${p.urlImg }&dateDeNaissance=${p.dateDeNaissance }&nomDeRue=${p.nomDeRue }&numDeRue=${p.numDeRue }
-				&ville=${p.ville }&email=${p.email }&tel=${p.tel }" target="_blank"> 
+				<a href="/premierProjetWeb/detailusersession?id=${i.index }" target="_blank"> 
 				<img src="${p.urlImg }"	alt="${p.nom }" id="${p.nom }"/>
 				</a>
 				<p class="nom-p">${p.nom } ${p.prenom }</p>
 			</div>			
-	</c:forEach>
-	
-	<c:forEach var="pp" items="${p }" >
-		${p.indexOf(Daniel) }
 	</c:forEach>
 	
 </body>
