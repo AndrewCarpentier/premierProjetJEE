@@ -2,6 +2,7 @@ package fr.andrew.servlet;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Hashtable;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -47,6 +48,24 @@ public class CollectionServlet extends HttpServlet {
 		request.setAttribute("tableauAlimentaire", tableauAlimentaire);
 		request.setAttribute("tableauAlimentaireClone", tableauAlimentaireClone);
 		request.setAttribute("tableauAlimentaire2", tableauAlimentaire2);
+		
+		
+		Hashtable<String, String> tableauAlimentaireMap = new Hashtable<String, String>();
+			tableauAlimentaireMap.put("key 1", "lait");
+			tableauAlimentaireMap.put("key 2", "café");
+			tableauAlimentaireMap.put("key 3", "chocolat");
+			tableauAlimentaireMap.put("key 4", "pate");
+			tableauAlimentaireMap.put("key 5", "riz");
+			tableauAlimentaireMap.put("key 6", "oeuf");
+			tableauAlimentaireMap.put("key 7", "pizza");
+			tableauAlimentaireMap.put("key 8", "steak");
+			tableauAlimentaireMap.put("key 9", "eau");
+			tableauAlimentaireMap.put("key 10", "coca cola");
+			
+		Hashtable<String, String> tableauAlimentaireEmpty = new Hashtable<String, String>();
+			
+		request.setAttribute("tableauAlimentaireMap", tableauAlimentaireMap);
+		request.setAttribute("tableauAlimentaireEmpty", tableauAlimentaireEmpty);
 		
 		this.getServletContext().getRequestDispatcher("/WEB-INF/collection.jsp").forward(request, response);
 	}

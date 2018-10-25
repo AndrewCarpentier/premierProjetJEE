@@ -9,6 +9,20 @@ public class Personne {
 	private String ville;
 	private String email;
 	private String tel;
+	private String urlImg;
+
+	public Personne(String nom, String prenom, String dateDeNaissance, String nomDeRue, int numDeRue, String ville,
+			String email, String tel, String urlImg) {
+		this.nom = nom;
+		this.prenom = prenom;
+		this.dateDeNaissance = dateDeNaissance;
+		this.nomDeRue = nomDeRue;
+		this.numDeRue = numDeRue;
+		this.ville = ville;
+		this.email = email;
+		this.tel = tel;
+		this.setUrlImg(urlImg);
+	}
 
 	public Personne() {
 		super();
@@ -91,6 +105,14 @@ public class Personne {
 
 	public void setTel(String tel) {
 		this.tel = tel;
+	}
+
+	public String getUrlImg() {
+		return urlImg;
+	}
+
+	public void setUrlImg(String urlImg) {
+		this.urlImg = urlImg;
 	}
 
 
