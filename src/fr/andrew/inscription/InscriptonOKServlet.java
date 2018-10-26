@@ -11,13 +11,13 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class inscriptonOKServlet
  */
 @WebServlet({ "/inscriptionok", "/inscriptionOK", "/inscriptionOk" })
-public class inscriptonOKServlet extends HttpServlet {
+public class InscriptonOKServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public inscriptonOKServlet() {
+    public InscriptonOKServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
