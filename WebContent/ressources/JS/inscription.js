@@ -19,7 +19,7 @@ function validerFormulaire() {
 
     if (validationNom === true && validationPrenom === true && validationDateDeNaissance === true && validationNumeroDeLaRue === true && validationEmail === true &&
         validationNumeroDeLaRue === true && validationVille === true && validationTelephone === true){
-        document.location.href = "/premierProjetWeb/index"
+        document.location.href = "/premierProjetWeb/inscriptionOK"
     } else{
         alert("il y a des erreurs dans le formulaire");
     }

@@ -12,11 +12,9 @@
 </head>
 <body>
 <%@ include file="menu.jsp" %>
-		<%
-		Personne jerome = (Personne) request.getAttribute("jerome");
-		%>
+
     <div id="inscription-formulaire">
-        <form id="form1" method="post">
+        <form id="form1" method="post" action="inscriptionok">
             <fieldset>
                 <legend>Vos coordonnées : </legend>
                 <div>
@@ -28,27 +26,27 @@
                 <div id="body" class="body">
                     <div>
                         <label for="nom">Nom : </label><br/>
-                        <input type="text" id="nom" name="nom" placeholder="nom" value="<%= jerome.getNom() %>" maxlength="25"/>
+                        <input type="text" id="nom" name="nom" placeholder="nom" value="${jerome.nom }" maxlength="25"/>
                     </div>
                     <div>
                         <label for="prenom">Prenom : </label><br/>
-                        <input type="text" id="prenom" name="prenom" placeholder="prenom" value="<%= jerome.getPrenom() %>" maxlength="25"/>
+                        <input type="text" id="prenom" name="prenom" placeholder="prenom" value="${jerome.prenom }" maxlength="25"/>
                     </div>
                     <div>
                         <label for="datedenaissance">Date de naissance : </label><br/>
-                        <input type="date" id="datedenaissance" name="datedenaissance" placeholder="date de naissance" value="<%= jerome.getDateDeNaissance() %>"/>
+                        <input type="date" id="datedenaissance" name="datedenaissance" placeholder="date de naissance" value="${jerome.dateDeNaissance }"/>
                     </div>
                     <div>
                         <label for="nomrue">Nom de la rue : </label><br/>
-                        <input type="text" id="nomrue" name="nomrue" placeholder="nom de la rue" maxlength="25" value=" <%= jerome.getNomDeRue() %> "/>
+                        <input type="text" id="nomrue" name="nomrue" placeholder="nom de la rue" maxlength="25" value=" ${jerome.nomDeRue } "/>
                     </div>
                     <div>
                         <label for="numrue">Numero de la rue : </label><br/>
-                        <input type="number" id="numrue" name="numrue" placeholder="numero de la rue" value="<%= jerome.getNumDeRue() %>"/>
+                        <input type="number" id="numrue" name="numrue" placeholder="numero de la rue" value="${jerome.numDeRue }"/>
                     </div>
                     <div>
                         <label for="ville">Ville : </label><br/>
-                        <input type="text" id="ville" name="ville" placeholder="Ville" maxlength="20" value="<%= jerome.getVille() %>">
+                        <input type="text" id="ville" name="ville" placeholder="Ville" maxlength="20" value="${jerome.ville }">
                     </div>
                     <div>
                         <label for="pays">Pays : </label><br/>
@@ -398,11 +396,11 @@
                     </div>
                     <div>
                         <label for="email">Email : </label><br/>
-                        <input type="email" name="email" id="email" placeholder="email" maxlength="50" value="<%= jerome.getEmail() %>" />
+                        <input type="email" name="email" id="email" placeholder="email" maxlength="50" value="${jerome.email }" />
                     </div>
                     <div>
                         <label for="telephone">Telephone : </label><br/>
-                        <input type="tel" name="telephone" id="telephone" placeholder="telephone" maxlength="10" value="<%= jerome.getTel() %>"/>
+                        <input type="tel" name="telephone" id="telephone" placeholder="telephone" maxlength="10" value="${jerome.tel }"/>
                     </div>
                     <div>
                         <label for="comment">Commentaire : </label><br/>
@@ -412,7 +410,7 @@
             </fieldset>
             <div>
                 <div class="submit-reset">
-                    <button type="button" id="submit" name="submit" onclick="validerFormulaire()">Envoyer</button>
+                    <button type="submit" id="submit" name="submit">Envoyer</button>
                 </div>
                 <div class="submit-reset">
                     <input type="reset" id="reset" name="reset"/>
