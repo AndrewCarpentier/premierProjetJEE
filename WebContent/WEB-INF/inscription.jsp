@@ -26,11 +26,11 @@
                 <div id="body" class="body">
                     <div>
                         <label for="nom">Nom : </label><br/>
-                        <input type="text" id="nom" name="nom" placeholder="nom" value="${jerome.nom }" maxlength="25"/>
+                        <input type="text" id="nom" name="nom" placeholder="${jerome.nom }" maxlength="25"/>
                     </div>
                     <div>
                         <label for="prenom">Prenom : </label><br/>
-                        <input type="text" id="prenom" name="prenom" placeholder="prenom" value="${jerome.prenom }" maxlength="25"/>
+                        <input type="text" id="prenom" name="prenom" placeholder="${jerome.prenom }" maxlength="25"/>
                     </div>
                     <div>
                         <label for="datedenaissance">Date de naissance : </label><br/>
@@ -38,15 +38,15 @@
                     </div>
                     <div>
                         <label for="nomrue">Nom de la rue : </label><br/>
-                        <input type="text" id="nomrue" name="nomrue" placeholder="nom de la rue" maxlength="25" value=" ${jerome.nomDeRue } "/>
+                        <input type="text" id="nomrue" name="nomrue" placeholder="${jerome.nomDeRue }" maxlength="25" />
                     </div>
                     <div>
                         <label for="numrue">Numero de la rue : </label><br/>
-                        <input type="number" id="numrue" name="numrue" placeholder="numero de la rue" value="${jerome.numDeRue }"/>
+                        <input type="number" id="numrue" name="numrue" placeholder="${jerome.numDeRue }"/>
                     </div>
                     <div>
                         <label for="ville">Ville : </label><br/>
-                        <input type="text" id="ville" name="ville" placeholder="Ville" maxlength="20" value="${jerome.ville }">
+                        <input type="text" id="ville" name="ville" placeholder="${jerome.ville }" maxlength="20" />
                     </div>
                     <div>
                         <label for="pays">Pays : </label><br/>
@@ -396,11 +396,11 @@
                     </div>
                     <div>
                         <label for="email">Email : </label><br/>
-                        <input type="email" name="email" id="email" placeholder="email" maxlength="50" value="${jerome.email }" />
+                        <input type="email" name="email" id="email" placeholder="${jerome.email }" maxlength="50" />
                     </div>
                     <div>
                         <label for="telephone">Telephone : </label><br/>
-                        <input type="tel" name="telephone" id="telephone" placeholder="telephone" maxlength="10" value="${jerome.tel }"/>
+                        <input type="tel" name="telephone" id="telephone" placeholder="${jerome.tel }" maxlength="10" />
                     </div>
                     <div>
                         <label for="comment">Commentaire : </label><br/>

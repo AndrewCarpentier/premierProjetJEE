@@ -28,7 +28,7 @@ public class InscriptionServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Personne jerome = new Personne("Artois", "Jerome", "1974-07-22", "Avenue De Marlioz", 84, "Lille", "JeromeArtois@gmail.com", "0621129973" );
+		Personne jerome = new Personne("Artois", "Jerome", "1996-04-10", "Avenue De Marlioz", 84, "Lille", "JeromeArtois@gmail.com", "0621129973" );
 		
 		request.setAttribute("jerome", jerome);
 		
